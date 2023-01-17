@@ -1,0 +1,42 @@
+export const PRODUCTS = [
+  {
+    id: "1",
+    category: "1",
+    name: "Acrilico Blue",
+    description: "Producto formulado con emulsiones acrílicas y pigmentos puros. Sus colores son intensos, luminosos, resistente a la luz y mezclables entre sí. Por su viscosidad y alto poder cubritivo pueden ser aplicados sobre todo tipo de superficies (madera, yeso, bizcocho cerámico, papel, cartón). Diluído con agua y medium retardador AD, pueden ser utilizados en técnicas de acuarela. Se aplica a pincel sobre superficies previamente selladas.",
+    weight: "350gr",
+    price: 16,
+  },
+  {
+    id: "2",
+    category: "2",
+    name: "Acrilico Red",
+    description: "Producto formulado con emulsiones acrílicas y pigmentos puros. Sus colores son intensos, luminosos, resistente a la luz y mezclables entre sí. Por su viscosidad y alto poder cubritivo pueden ser aplicados sobre todo tipo de superficies (madera, yeso, bizcocho cerámico, papel, cartón). Diluído con agua y medium retardador AD, pueden ser utilizados en técnicas de acuarela. Se aplica a pincel sobre superficies previamente selladas.",
+    weight: "800gr",
+    price: 30,
+  },
+  {
+    id: "3",
+    category: "1",
+    name: "Acrilico Pink",
+    description: "Producto formulado con emulsiones acrílicas y pigmentos puros. Sus colores son intensos, luminosos, resistente a la luz y mezclables entre sí. Por su viscosidad y alto poder cubritivo pueden ser aplicados sobre todo tipo de superficies (madera, yeso, bizcocho cerámico, papel, cartón). Diluído con agua y medium retardador AD, pueden ser utilizados en técnicas de acuarela. Se aplica a pincel sobre superficies previamente selladas.",
+    weight: "120gr",
+    price: 5,
+  },
+  {
+    id: "4",
+    category: "2",
+    name: "Acrilico purple",
+    description: "Producto formulado con emulsiones acrílicas y pigmentos puros. Sus colores son intensos, luminosos, resistente a la luz y mezclables entre sí. Por su viscosidad y alto poder cubritivo pueden ser aplicados sobre todo tipo de superficies (madera, yeso, bizcocho cerámico, papel, cartón). Diluído con agua y medium retardador AD, pueden ser utilizados en técnicas de acuarela. Se aplica a pincel sobre superficies previamente selladas.",
+    weight: "900gr",
+    price: 35,
+  },
+  {
+    id: "5",
+    category: "2",
+    name: "Acrilico green",
+    description: "Producto formulado con emulsiones acrílicas y pigmentos puros. Sus colores son intensos, luminosos, resistente a la luz y mezclables entre sí. Por su viscosidad y alto poder cubritivo pueden ser aplicados sobre todo tipo de superficies (madera, yeso, bizcocho cerámico, papel, cartón). Diluído con agua y medium retardador AD, pueden ser utilizados en técnicas de acuarela. Se aplica a pincel sobre superficies previamente selladas.",
+    weight: "900gr",
+    price: 35,
+  },
+];
