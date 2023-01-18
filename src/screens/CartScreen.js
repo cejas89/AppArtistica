@@ -5,7 +5,7 @@ import CartItem from '../components/CartItem';
 
 
 import { useSelector, useDispatch, connect } from 'react-redux';
-import { removeItem } from '../store/actions/cart.action';
+import { confirmCart, removeItem } from '../store/actions/cart.action';
 
 export default function CartScreen() {
   const dispatch = useDispatch();
@@ -13,6 +13,7 @@ export default function CartScreen() {
   const total = useSelector((state) => state.cart.total)
 
   const handlerConfirmCart = () => {
+    dispatch(confirmCart(items, total));
     console.log("Confirmado")
   }
 

@@ -4,18 +4,18 @@ import { useSelector, useDispatch, connect } from "react-redux";
 
 import { addItem } from "../store/actions/cart.action";
 
-const BreadDetailsScreen = () => {
-  const bread = useSelector((state) => state.breads.selected);
+const ProductDetailScreen = () => {
+  const product = useSelector((state) => state.products.selected);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    console.log(bread);
+    console.log(product);
   }, []);
 
 
   const handlerAddItemCart = () => {
     console.log("Articulo agregado al carrito")
-    dispatch(addItem(bread));
+    //dispatch(addItem(product));
   }
 
 
@@ -23,9 +23,9 @@ const BreadDetailsScreen = () => {
   return (
     <View style={styles.container}>
       <View style={styles.screen}>
-        <Text style={styles.title}>{bread.name}</Text>
-        <Text style={styles.description}>{bread.description}</Text>
-        <Text style={styles.price}>{bread.price}</Text>
+        <Text style={styles.title}>{product.name}</Text>
+        <Text style={styles.description}>{product.description}</Text>
+        <Text style={styles.price}>{product.price}</Text>
         <View style={styles.button}>
           <Button title="Agregar al carrito" onPress={handlerAddItemCart} />
         </View>
@@ -34,7 +34,7 @@ const BreadDetailsScreen = () => {
   );
 };
 
-export default connect()(BreadDetailsScreen);
+export default connect()(ProductDetailScreen);
 
 const styles = StyleSheet.create({
   container: {

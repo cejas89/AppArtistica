@@ -2,11 +2,24 @@ import { StyleSheet, Text, View, FlatList } from 'react-native'
 import React from 'react'
 import CART from '../data/cart'
 import OrderItem from '../components/OrderItem';
+import { useEffect } from 'react';
+import { useSelector, useDispatch, connect } from 'react-redux';
+import { getOrders, deleteOrder } from '../store/actions/order.action';
 
 export default function OrdersScreen() {
+  const dispatch = useDispatch();
+  const orders = useSelector((state) => state.orders.list)
   const items = CART;
 
-  const handlerDeleteItem = () => {
+
+  useEffect(() => {
+    console.log(orders)
+    dispatch(getOrders())
+  }, [])
+
+
+  const handlerDeleteItem = (id) => {
+    dispatch(deleteOrder(id))
     console.log("Elminiado")
   }
 
@@ -17,7 +30,7 @@ export default function OrdersScreen() {
 
   return (
     <FlatList
-      data={items}
+      data={orders}
       keyExtractor={(item) => item.id}
       renderItem={renderItem}
     />
@@ -25,3 +38,5 @@ export default function OrdersScreen() {
 }
 
 const styles = StyleSheet.create({})
+
+connect()(OrdersScreen)
