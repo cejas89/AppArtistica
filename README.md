@@ -33,9 +33,6 @@ Dependencias utilizadas para la creacion
 
 - [Redux] (https://es.redux.js.org/)
 
-
-
-
 ## Autores ✒️
 
 - **Lucas Cejas** - _Developer_ - (https://https://github.com/cejas89)

@@ -6,7 +6,7 @@ export const PRODUCTS = [
     description: "Producto formulado con emulsiones acrílicas y pigmentos puros. Sus colores son intensos, luminosos, resistente a la luz y mezclables entre sí.......",
     weight: "Blue",
     price: 16,
-    img: require('../asset/150.jpg'),
+
   },
   {
     id: "2",
@@ -15,7 +15,7 @@ export const PRODUCTS = [
     description: "Producto formulado con emulsiones acrílicas y pigmentos puros. Sus colores son intensos, luminosos, resistente a la luz y mezclables entre sí.......",
     weight: "Red",
     price: 30,
-    img: 'https://picsum.photos/10',
+
   },
   {
     id: "3",
@@ -24,7 +24,7 @@ export const PRODUCTS = [
     description: "Producto formulado con emulsiones acrílicas y pigmentos puros. Sus colores son intensos, luminosos, resistente a la luz y mezclables entre sí.......",
     weight: "Pink",
     price: 5,
-    img: 'https://picsum.photos/10',
+
   },
   {
     id: "4",
@@ -33,7 +33,7 @@ export const PRODUCTS = [
     description: "Producto formulado con emulsiones acrílicas y pigmentos puros. Sus colores son intensos, luminosos, resistente a la luz y mezclables entre sí.......",
     weight: "Purple",
     price: 35,
-    img: 'https://picsum.photos/10',
+
   },
   {
     id: "5",
@@ -42,7 +42,7 @@ export const PRODUCTS = [
     description: "Producto formulado con emulsiones acrílicas y pigmentos puros. Sus colores son intensos, luminosos, resistente a la luz y mezclables entre sí.......",
     weight: "Green",
     price: 35,
-    img: 'https://picsum.photos/10',
+
   },
   {
     id: "6",
@@ -51,7 +51,7 @@ export const PRODUCTS = [
     description: "Producto formulado con emulsiones acrílicas y pigmentos puros. Sus colores son intensos, luminosos, resistente a la luz y mezclables entre sí.......",
     weight: "Green",
     price: 35,
-    img: 'https://picsum.photos/10',
+
   },
   {
     id: "7",
@@ -60,7 +60,7 @@ export const PRODUCTS = [
     description: "Producto formulado con emulsiones acrílicas y pigmentos puros. Sus colores son intensos, luminosos, resistente a la luz y mezclables entre sí.......",
     weight: "Green",
     price: 35,
-    img: 'https://picsum.photos/10',
+
   },
   {
     id: "8",
@@ -69,7 +69,7 @@ export const PRODUCTS = [
     description: "Producto formulado con emulsiones acrílicas y pigmentos puros. Sus colores son intensos, luminosos, resistente a la luz y mezclables entre sí.......",
     weight: "Green",
     price: 35,
-    img: 'https://picsum.photos/10',
+
   },
   {
     id: "9",
@@ -78,7 +78,7 @@ export const PRODUCTS = [
     description: "Producto formulado con emulsiones acrílicas y pigmentos puros. Sus colores son intensos, luminosos, resistente a la luz y mezclables entre sí.......",
     weight: "Green",
     price: 35,
-    img: 'https://picsum.photos/10',
+
   },
-  
+
 ];
