@@ -1,11 +1,11 @@
 import React from 'react'
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
 
-const GridItem = ({ item, onSelected })=> {
+const GridItem = ({ item, onSelected }) => {
   return (
     <View style={styles.gridITem}>
       <TouchableOpacity
-        style= {{...styles.container, backgroundColor: item.color}}
+        style={{ ...styles.container, backgroundColor: item.color }}
         onPress={() => onSelected(item)}>
         <View>
           <Text style={styles.title}>
@@ -24,6 +24,7 @@ const styles = StyleSheet.create({
     margin: 15,
     height: 100,
     width: 200,
+    justifyContent: "center",
   },
   container: {
     flex: 1,
@@ -39,7 +40,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontFamily: "Tillana",
-    textAlign: 'center',    
+    textAlign: 'center',
   },
 });
 

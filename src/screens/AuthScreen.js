@@ -9,10 +9,10 @@ import {
 } from "react-native"
 import React, { useCallback, useReducer, useEffect } from "react"
 
-import { COLORS } from "../constants/colors"
-import { useDispatch } from "react-redux"
+import { COLORS } from "../constants/color"
+import { connect, useDispatch } from "react-redux"
 import { useState } from "react"
-import { signUp } from "../store/actions/auth.actions"
+import { signUp } from "../store/actions/auth.action"
 import Input from "../components/Input"
 
 const FORM_INPUT_UPDATE = "FORM_INPUT_UPDATE"
@@ -42,12 +42,14 @@ const formReducer = (state, action) => {
 }
 
 const AuthScreen = () => {
+    const [isSingUp, setIsSingUp] = useState(null);
     const dispatch = useDispatch()
     const [error, setError] = useState(null)
 
     useEffect(() => {
         if (error) {
-            Alert.alert("A ocurrido un error", error, [{ text: "Ok" }])
+
+            Alert.alert(error, [{ text: "Ok" }])
         }
     }, [error])
 
@@ -64,7 +66,7 @@ const AuthScreen = () => {
     })
 
     const handleSignUp = () => {
-        //dispatch(signup(email, password))
+        //dispatch(signUp(email, password))
         if (formState.formIsValid) {
             dispatch(
                 signUp(formState.inputValues.email, formState.inputValues.password)
@@ -96,7 +98,7 @@ const AuthScreen = () => {
             style={styles.screen}
         >
             <View style={styles.container}>
-                <Text style={styles.title}>TU PANADERIA: LOGIN</Text>
+                <Text style={styles.title}>TU NEGOCIO: LOGIN</Text>
                 <View>
                     <Input
                         id="email"
@@ -125,18 +127,18 @@ const AuthScreen = () => {
                 <View style={styles.footer}>
                     <View style={styles.button}>
                         <Button
-                            //title={isSingUp ? "REGISTRARME" : "LOGIN"}
-                            title="Test"
+                            title={isSingUp ? "REGISTRARME" : "LOGIN"}
+                            //title="Test SignUp"
                             color={COLORS.primaryColor}
                             onPress={handleSignUp}
                         />
                     </View>
                     <View>
                         <Button
-                            //title={`Cambiar a ${!isSingUp ? "Registrame" : "Login"}`}
-                            title="Test"
+                            title={`Cambiar a ${!isSingUp ? "Registrame" : "Login"}`}
+                            //title="Test"
                             color={COLORS.accentColor}
-                        //onPress={() => setIsSingUp((prevState) => !prevState)}
+                            onPress={() => setIsSingUp((prevState) => !prevState)}
                         />
                     </View>
                 </View>
@@ -145,7 +147,7 @@ const AuthScreen = () => {
     )
 }
 
-export default AuthScreen
+export default connect()(AuthScreen)
 
 const styles = StyleSheet.create({
     screen: {

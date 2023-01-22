@@ -8,7 +8,8 @@ export const CART = [
         price: 250 ,
         quantity: 2 ,
         date: 1633996712968,
-        total: 253
+        total: 253,
+        img: 'https://picsum.photos/10',
     },
     {
         id: '3',
@@ -19,7 +20,7 @@ export const CART = [
         price: 150 ,
         quantity: 4 ,   
         date: 1633996712968,
-        total: 1500     
+        total: 1500,     
     },
     {
         id: '6',

@@ -2,6 +2,7 @@ import { FlatList, StyleSheet, Text, TouchableOpacity, View } from 'react-native
 import React from 'react'
 import CART from '../data/cart';
 import CartItem from '../components/CartItem';
+import { useEffect } from 'react';
 
 
 import { useSelector, useDispatch, connect } from 'react-redux';
@@ -11,6 +12,11 @@ export default function CartScreen() {
   const dispatch = useDispatch();
   const items = useSelector((state) => state.cart.items)
   const total = useSelector((state) => state.cart.total)
+
+  useEffect(() => {
+    console.log(items);
+  }, []);
+
 
   const handlerConfirmCart = () => {
     dispatch(confirmCart(items, total));

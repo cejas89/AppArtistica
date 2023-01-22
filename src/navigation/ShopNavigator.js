@@ -28,7 +28,7 @@ export default function ShopNavigator() {
         name="Categories"
         component={CategoriesScreen}
         options={{
-          title: "Mi Panaderia",
+          title: "Mi Negocio",
         }}
       />
       <Stack.Screen

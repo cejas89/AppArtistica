@@ -9,8 +9,8 @@ const ProductItem = ({ item, onSelected }) => {
                     <Text style={styles.title}>{item.name}</Text>
                 </View>
                 <View>
-                    <Text style={styles.details}>{item.price}</Text>
-                    <Text style={styles.details}>{item.weight}</Text>
+                    <Text style={styles.details}>El precio es: Ars {item.price}</Text>
+                    <Text style={styles.details}>El color es {item.weight}</Text>
                 </View>
             </View>
         </TouchableOpacity>
